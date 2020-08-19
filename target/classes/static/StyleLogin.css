@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/maledives.jpg);
+background-size: cover;
+font-family: sans-serif;
+color: white;
+}
+
+ul
+{
+margin: 0px;
+padding: 5px;
+list-style: none;
+}
+
+ul li{
+float:left;
+width: 250px;
+height: 40px;
+opacity: .8;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+}
+ul li a
+{
+text-decoration: none;
+color: #fff;
+display: block;
+border: 1px solid transparent;
+}
+
+ul li a:hover
+{
+background-color: black;
+}
+
+ul li ul li
+{
+display: none;
+}
+
+ul li:hover ul li
+{
+display: block;
+}
+
+.logo img{
+float: left;
+width: 150px;
+height: 150;}
+
+* {box-sizing: border-box}
+.container {
+margin-left: 450px;
+margin-top: 200px;
+border-radius: 5px;
+background-color: #696969;
+padding: 20px 0 30px 0;
+width: 500px;
+}
+h2{
+font-color: black;
+}
+
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  width: 300px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+  width: 300px;
+}
+
+.inner {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+button{
+width: 600 px;
+height: 40px;
+padding: 14px 40px;
+border: none;
+outline: none;
+background: red;
+cursor: pointer;
+color: #fff;
+font: 60;
+}
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+ .row:after {
+   content: "";
+   display: table;
+   clear: both;
+ }
+ .vl {
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+   border: 2px solid #ddd;
+   height: 175px;
+ }
+ .bottom-container {
+   text-align: center;
+   background-color: #666;
+   border-radius: 0px 0px 4px 4px;
+ }
+

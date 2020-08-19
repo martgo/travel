@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<script src="https://kit.fontawesome.com/1d301ea985.js" crossorigin="anonymus"></script>
+<link rel="stylesheet" type="text/css" href="StyleUbezpieczenia.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Flying squirrel</title>
+</head>
+<body>
+<div class="logo">
+    <img src="Images/fly.png">
+</div>
+<ul>
+    <li class="active"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+    <li><a>O nas</a>
+        <ul>
+            <li><a href="/informacje">Informacje</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+        </ul>
+    </li>
+    <li><a href="/kierunki">Kierunki</a>
+    </li>
+    <li><a>Bezpieczne Wakacje</a>
+        <ul>
+            <li><a href="informacjepodrozni">Ubezpieczenia</a></li>
+            <li><a href="zglos">Zgłoś podróż </a></li>
+            </li>
+        </ul>
+    <li><a href="/panel">Moje konto</a>
+    </li>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="Images/biker.png">
+                    <h3>SPORT</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Pakiet zawiera: Koszty leczenia z uwzględnieniem następstw chorób przewlekłych/osobę: 700 000
+                        EUR.
+                        Koszty transportu z uwzględnieniem następstw chorób przewlekłych/osobę: bez limitu.
+                        NNW/osobę: 100 000 EUR.
+                        Koszty przerwania podróży: 1 000 EUR. </p>
+                    <button type="button" name="button" id="btn" onclick="cot()">Wybierz</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="Images/gamecontroller.png">
+                    <h3>RODZINA</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Pakiet zawiera: Koszty leczenia z uwzględnieniem następstw chorób przewlekłych/osobę: 200 000
+                        EUR.
+                        Koszty transportu z uwzględnieniem następstw chorób przewlekłych/osobę: bez limitu.
+                        NNW/osobę: 50 000 EUR.
+                        Koszty przerwania podróży: 1 000 EUR.
+
+                    </p>
+                    <button type="button" name="button" id="btn" onclick="cot()">Wybierz</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="Images/planes.png">
+                    <h3>BAGAŻ</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>
+                        Pakiet zawiera: Zagubienie lub kradzież bagażu: 400 000 EUR.
+                        Pomoc finansową: 50 000 EUR.
+                        Koszty transportu bagażu: 1 000 EUR. </p>
+                    <button type="button" name="button" id="btn" onclick="cot()">Wybierz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ul>
+</body>
+<div class="container2">
+    <div class="icon">
+        <i class="fas fa-shopping-cart"></i>
+        <p id="span">
+
+        </p>
+    </div>
+</div>
+<script type="text/javascript">
+    var btn = document.getElementById('btn');
+    var spn = document.getElementById('span');
+    let count=0;
+    function cot(){
+    count+=1
+    document.getElementById('span').innerHTML=count;
+    }
+</script>
+</html>

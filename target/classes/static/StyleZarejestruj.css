@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/maledives.jpg);
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      font-family: sans-serif;
+      color: white;}
+ul
+{
+margin-top: 50px;
+padding: 0px;
+list-style: none;
+
+}
+ul li{
+width: 100px;
+height: 30px;
+opacity: .8;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+}
+ul li a
+{
+text-decoration: none;
+color: #fff;
+display: block;
+border: 1px solid #fff;
+}
+
+form {border: 3px solid #f1f1f1;
+form-position: center;
+width: 400px;
+}
+
+input[type=imie], input[type=nazwisko],input[type=data],input[type=kraj],input[type=haslo],input[type=powtorzhaslo] {
+  width: 250px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}

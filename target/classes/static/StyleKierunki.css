@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+body{
+background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../Images/maledives.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+font-family: sans-serif;
+color: white;
+
+}
+
+ul
+{
+margin: 0px;
+padding: 0px;
+list-style: none;
+}
+
+ul li{
+float:left;
+width: 250px;
+height: 40px;
+opacity: .8;
+line-height: 40px;
+text-align: center;
+font-size: 15px;
+}
+ul li a
+{
+text-decoration: none;
+color: #fff;
+display: block;
+border: 1px solid transparent;
+}
+
+ul li a:hover
+{
+background-color: black;
+}
+
+ul li ul li
+{
+display: none;
+}
+
+ul li:hover ul li
+{
+display: block;
+}
+
+.logo img{
+float: left;
+width: 150px;
+height: 150;}
+h1{
+font-size:25px;
+
+}
+
+.holidays{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  }
+
+#holidays td, #holidays th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#holidays tr:nth-child(even){background-color: transparent;}
+
+#holidays tr:hover {background-color: #ddd;}
+
+#holidays th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0077b3;
+  color: white;
+}
+
+#holidays button{
+width: 300 px;
+height: 40px;
+border: none;
+outline: none;
+background: black;
+cursor: pointer;
+color: #fff;
+font: 20;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#holidays {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#holidays th, #holidays td {
+  text-align: left;
+  padding: 12px;
+}
+
+#holidays tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#holidays tr.header, #holidays tr:hover {
+  background-color: #f1f1f1;
+}
