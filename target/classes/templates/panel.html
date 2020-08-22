@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="Style.css">
@@ -34,47 +34,37 @@
         </li>
     </ul>
 </div>
-<table id="tablepanel">
-    <tr>
-        <th>Zamówienie</th>
-        <th>Ilość/os.</th>
-        <th>Cena</th>
+<table id="holidays">
+        <tr>
+            <th>Kontynent</th>
+            <th>Kraj</th>
+            <th>Miasto</th>
+            <th>Hotel</th>
+            <th>Długość wyjazdu</th>
+            <th>Wyżywienie</th>
+            <th>Pokoje/os.</th>
+            <th>Cena/os.</th>
+            <th>Opis</th>
+            <th> Room ID</th>
+        </tr>
+    <tbody>
+    <tr th:each="roomsList: ${roomsList}">
+        <td><span th:text="${roomsList.continent}">Kontynent</span></td>
+        <td><span th:text="${roomsList.country}">Kraj</span></td>
+        <td><span th:text="${roomsList.city}">Miasto</span></td>
+        <td><span th:text="${roomsList.hotel_name}">Hotel</span></td>
+        <td><span th:text="${roomsList.date}">Długość wyjazdu</span></td>
+        <td><span th:text="${roomsList.boarding}">Wyzywienie</span></td>
+        <td><span th:text="${roomsList.persons}">Osoby</span></td>
+        <td><span th:text="${roomsList.price}">Cena</span></td>
+        <td><span th:text="${roomsList.description}">Opis</span></td>
+        <td>
+            <form action="/kierunki" method=GET>
+                <input type="submit" id="roomIdToAdd" th:value="${roomsList.roomId}" name="roomIdToAdd"/>
+            </form>
+        </td>
     </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
+    </tbody>
 </table>
 </body>
 <a href="/login">
