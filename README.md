@@ -20,5 +20,4 @@ The project was created using technology:
 
 
 ##Authors
-* Sylwia Puchalska
 * Marta Gos 
