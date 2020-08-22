@@ -19,8 +19,8 @@ public class LoginController {
     @PostMapping("/login")
     public String verifyLoginPage(@ModelAttribute Account account, Model model) {
         model.addAttribute("konto", new Account());
-        if (account.getLogin().equals("ABCD") && account.getHaslo().equals("qwertyuiop"))
-            return "adminPanel";
+        if (account.getLogin().equals("marta") && account.getHaslo().equals("IT"))
+            return "/kierunki";
         return "errorLogin";
     }
 }
